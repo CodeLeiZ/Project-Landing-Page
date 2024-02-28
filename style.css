@@ -1,9 +1,33 @@
 body {
-    min-height: 100vh;
-    margin: 0; 
+    margin: 0;
+    padding: 0;
+}
+
+.main {
     display: flex;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 0 200px;
     flex-direction: column;
-    align-items: space-between;
+    position: relative;
+}
+
+.main::before,
+.main::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 525px; /* Adjust height as needed */
+    background-color: #1F2937;
+}
+
+.main::before {
+    left: -200px;
+}
+
+.main::after {
+    right: -200px;
 }
 
 .header {
