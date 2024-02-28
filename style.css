@@ -1,6 +1,7 @@
 body {
     min-height: 100vh;
     margin: 0;
+
 }
 
 .header {
@@ -34,27 +35,64 @@ ul {
     list-style-type: none;
 }
 
+.container-one {
+    display: flex;
+    background: #1F2937;
+    height: 470px;
+    align-items: center;
+}
+
+.itemA {
+    width: 525px;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.itemA .htext {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: bold;
+    max-width: 350px;
+
+}
+
+.itemA .hsubtext {
+    color: #E5E7EB;
+    font-size: 18px;
+    max-width: 400px;
+}
+
+.htext .hsubtext {
+    padding: 0;
+    margin: 0;
+}
+
 .container-one button {
     background-color: #3882F6;
     color: #fff;
-    padding: 4px 16px;
     border-radius: 6px;
     text-align: center;
     text-decoration: none;
     border: none;
     font-size: 18px;
     font-weight: 500;
+    flex-shrink: 0;
+    width: 130px;
+    height: 40px;
 }
 
 .container-four button {
     background-color: #3882F6;
     color: #fff;
-    padding: 4px 16px;
+    padding: 2px 14px;
     border-radius: 6px;
     text-align: center;
     text-decoration: none;
-    border-color: #fff;
-    border-style: none;
+    border: 2px solid #fff;
     font-size: 18px;
     font-weight: 500;
+    flex-shrink: 0;
 }
