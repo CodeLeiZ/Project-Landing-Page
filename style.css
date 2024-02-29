@@ -9,16 +9,17 @@ body {
     box-sizing: border-box;
     margin: 0 200px;
     flex-direction: column;
-    position: relative;
+    position: relative; 
 }
 
+ /* Ty ChatGPT for this tips wasn't very familiar with the positions  */
 .main::before,
 .main::after {
     content: '';
     position: absolute;
     top: 0;
     width: 200px;
-    height: 525px; /* Adjust height as needed */
+    height: 525px; 
     background-color: #1F2937;
 }
 
@@ -69,11 +70,12 @@ ul {
 }
 
 .itemA {
-    width: 525px;
+    width: 425px;
     height: 235px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
     
 }
 
@@ -81,33 +83,36 @@ ul {
     color: #F9FAF8;
     font-size: 48px;
     font-weight: bold;
-    max-width: 350px;
-
+    box-sizing: content-box;
+    
 }
 
 .itemA .hsubtext {
     color: #E5E7EB;
     font-size: 18px;
     max-width: 400px;
+    font-weight: 200;   
 }
 
-.htext .hsubtext {
-    padding: 0;
-    margin: 0;
+.htext,
+.hsubtext {
+    font-style: normal;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .container-one button {
     background-color: #3882F6;
     color: #fff;
-    border-radius: 6px;
+    border-radius: 8px;
     text-align: center;
     text-decoration: none;
     border: none;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bold;
     flex-shrink: 0;
-    width: 130px;
-    height: 40px;
+    max-height: 40px;
+    padding: 10px 36px 12px;
 }
 
 .container-four button {
