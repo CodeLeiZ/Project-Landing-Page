@@ -62,6 +62,18 @@ body {
     padding: 0 8px;
 }
 
+/* some navbar hover animations */
+
+.navbar .ul a {
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.navbar .ul a:hover {
+    color: #3882F6;
+    border-radius: 4px;  
+}
+
 .HArea {
     display: flex;
     height: 470px;
