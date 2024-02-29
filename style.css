@@ -11,70 +11,63 @@ body {
 
 .main {
     display: flex;
-    min-height: 100vh;
-    box-sizing: border-box;
-    margin: 0 250px;
+    margin: 0 ;
     flex-direction: column;
-    position: relative; 
 }
 
- /* Ty ChatGPT for this tips wasn't very familiar with the positions  */
-.main::before,
-.main::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 250px;
-    height: 525px; 
-    background-color: #1F2937;
-}
 
-.main::before {
-    left: -250px;
-}
-
-.main::after {
-    right: -250px;
-}
+    /* ################# Header Part ################# */
 
 .header {
     background: #1F2937;
+    justify-content: center;
+    height: 525px;
+}
+
+.Hcontainer {
     display: flex;
-    padding: 0 16px;
-    align-items: center;
+    margin: 0 250px;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
     justify-content: space-between;
 }
 
-.header ul {
+.navbar .logo {
     display: flex;
+    align-items: center;
+}
+.navbar #logo {
+    width: 150px;
+    height: 35px;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.navbar .ul {
     margin: 0;
     padding: 0;
 }
 
-.header a {
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar .ul a {
     color: #E5E7EB;
     font-size: 12px;
     text-decoration: none;
     padding: 0 8px;
 }
 
-.header .logo {
-    width: 150px;
-    align-items: center;
-    padding: 12px 0;
-}
-
-ul {
-    list-style-type: none;
-}
-
-.container-one {
+.HArea {
     display: flex;
-    background: #1F2937;
     height: 470px;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .itemA {
@@ -123,7 +116,7 @@ ul {
     padding: 0 10px;
 }
 
-    /* container 2 css */
+    /* ################# container 1 css ################# */
 
 .container-two {
     display: flex;
@@ -181,10 +174,37 @@ ul {
 
     /* container 3 section */
 
-    
+.container-three {
+    display: flex;
+    background: #E5E7EB;
+    height: 430px;
+    width: auto;
+    flex: 1;
+    margin: 0 -250px;
+}
+
+.QAtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    margin: 0 250px;
+}
+
+.QAtext > * {
+    display: flex;
+    flex-direction: column;
+}
+
+.Author {
+    align-self: flex-end;
+}
+
+
 
      /* button section */
-.container-one button {
+.HArea button {
     background-color: #3882F6;
     color: #fff;
     border-radius: 8px;
@@ -201,7 +221,7 @@ ul {
     cursor: pointer;
 }
 
-.container-one button:hover {
+.HArea button:hover {
     background-color: #A72F11;
     color: white;
 }
