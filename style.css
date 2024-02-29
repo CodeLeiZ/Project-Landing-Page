@@ -7,7 +7,7 @@ body {
     display: flex;
     min-height: 100vh;
     box-sizing: border-box;
-    margin: 0 200px;
+    margin: 0 250px;
     flex-direction: column;
     position: relative; 
 }
@@ -18,17 +18,17 @@ body {
     content: '';
     position: absolute;
     top: 0;
-    width: 200px;
+    width: 250px;
     height: 525px; 
     background-color: #1F2937;
 }
 
 .main::before {
-    left: -200px;
+    left: -250px;
 }
 
 .main::after {
-    right: -200px;
+    right: -250px;
 }
 
 .header {
@@ -67,6 +67,8 @@ ul {
     background: #1F2937;
     height: 470px;
     align-items: center;
+    justify-content: space-between;
+
 }
 
 .itemA {
@@ -76,6 +78,7 @@ ul {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    min-width: 235px;
     
 }
 
@@ -84,7 +87,7 @@ ul {
     font-size: 48px;
     font-weight: bold;
     box-sizing: content-box;
-    
+
 }
 
 .itemA .hsubtext {
@@ -95,10 +98,30 @@ ul {
 }
 
 .htext,
-.hsubtext {
+.hsubtext,
+.container-one button {
     font-style: normal;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
+}
+
+.itemB {
+    display: flex;
+    background: #6D747D;
+    height: 235px;
+    width: 425px;
+    max-width: 860px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemB #Btext { /* remove if text is removed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 0 10px;
 }
 
 .container-one button {
@@ -109,10 +132,18 @@ ul {
     text-decoration: none;
     border: none;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 500;
     flex-shrink: 0;
     max-height: 40px;
     padding: 10px 36px 12px;
+    /* Testing some hover effects */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.container-one button:hover {
+    background-color: #A72F11;
+    color: white;
 }
 
 .container-four button {
